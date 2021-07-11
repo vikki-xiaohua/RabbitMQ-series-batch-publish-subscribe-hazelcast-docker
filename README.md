@@ -1,0 +1,1 @@
+# rabbitmq-batch-pub-sub
