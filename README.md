@@ -1,3 +1,4 @@
+
 # rabbitmq-batch-pub-sub
 
 
@@ -44,4 +45,5 @@ This one is used in this project
 Unfortunately, I didn't figure out a way to make it work with batch
 
 
-
+### Todo
+Load test to compare the throughtput between  Batch on Publisher (send a list directly)  vs Batch on Subscriber
