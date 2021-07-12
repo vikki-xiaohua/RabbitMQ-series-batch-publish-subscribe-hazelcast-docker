@@ -1,0 +1,6 @@
+hazelcast:
+  cluster-name: dev
+  network:
+    join:
+      multicast:
+        enabled: true

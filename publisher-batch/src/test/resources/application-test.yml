@@ -1,0 +1,41 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    #    host: rabbitmq
+    host: localhost
+    port: 5672
+    password: guest
+    username: guest
+    publisher-confirms: true
+    publisher-returns: true
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+server:
+  port: 9090
+
+forex:
+  endpoint:
+    base-url: https://eodhistoricaldata.com/api
+    api-token: OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX
+    fmt: json
+    currency-pair-list: EUR,EUR,EUR,EUR,EUR
+
+hazelcast:
+  cluster-name: hazelcast-cluster
+  network:
+    join:
+      multicast:
+        enabled: true
+
+mail:
+  host: smtp.163.com
+  user: vikki_xiaohua_yu@163.com
+  password: JENNLEZMWVNLOCWB
+  mail-to: 575267785@qq.com
+  smtp:
+    port: 25
+    auth: true

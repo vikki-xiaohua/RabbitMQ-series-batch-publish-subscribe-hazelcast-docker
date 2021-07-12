@@ -1,0 +1,47 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: rabbitmq
+    #    host: localhost
+    port: 5672
+    password: guest
+    username: guest
+    listener:
+      simple:
+        concurrency: 1
+        max-concurrency: 5
+        prefetch: 5
+        default-requeue-rejected: false
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+          initial-interval: 3s
+          default-requeue-rejected: false
+          acknowledge-mode: manual
+          max-attempts: 3
+          max-interval: 10s
+          multiplier: 2
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+server:
+  port: 9091
+
+hazelcast:
+  cluster-name: hazelcast-cluster
+  network:
+    join:
+      multicast:
+        enabled: true
+
+mail:
+  host: smtp.163.com
+  user: vikki_xiaohua_yu@163.com
+  password: JENNLEZMWVNLOCWB
+  mail-to: 575267785@qq.com
+  smtp:
+    port: 25
+    auth: true
+
