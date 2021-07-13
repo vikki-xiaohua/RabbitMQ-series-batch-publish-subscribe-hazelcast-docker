@@ -37,7 +37,7 @@ I find it's not friendly to handle  manually ack via Channel  ([How to get Chann
 
 ###  2, implements ChannelAwareBatchMessageListener
 
-This one is used in this project
+This is the one used in this project
 
 
 ###  3, @RabbitListener
