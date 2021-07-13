@@ -26,24 +26,24 @@ batchingRabbitTemplate.convertAndSend()
 2021-07-10 00:44:48,399 INFO [messageListenerContainer-2] subscriber.config.BatchMessagesListener: {"forex":"EUR","value":1.626021241528E12}
 ```
 
-### Batch on Publisher  vs Batch on Subscriber
+## Batch on Publisher  vs Batch on Subscriber
 
 It looks like batch consume is not as easy as non-batch message consume. Tried the followings:
 
-####  1, BatchingRabbitTemplate.receive().
+###  1, BatchingRabbitTemplate.receive().
 
 I find it's not friendly to handle  manually ack via Channel  ([How to get Channel object in Spring boot AMQP](https://stackoverflow.com/questions/63115809/how-to-get-channel-object-in-spring-boot-amqp-and-create-a-exchange-of-type-x-c))
 
 
-####  2, implements ChannelAwareBatchMessageListener
+###  2, implements ChannelAwareBatchMessageListener
 
 This one is used in this project
 
 
-####  3, @RabbitListener
+###  3, @RabbitListener
 
 Unfortunately, I didn't figure out a way to make it work with batch
 
 
-### Todo
+## Todo
 Load test to compare the throughtput between  Batch on Publisher (send a list directly)  vs Batch on Subscriber
