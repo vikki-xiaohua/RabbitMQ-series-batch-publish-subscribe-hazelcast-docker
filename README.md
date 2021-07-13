@@ -28,7 +28,7 @@ batchingRabbitTemplate.convertAndSend()
 
 ## Batch on Publisher  vs Batch on Subscriber
 
-It looks like batch consume is not as easy as non-batch message consume. Tried the followings:
+It looks like batch consumption is not as easy as non-batch message consumption. the following strategies are tried:
 
 ###  1, BatchingRabbitTemplate.receive().
 
@@ -46,4 +46,4 @@ Unfortunately, I didn't figure out a way to make it work with batch
 
 
 ## Todo
-Load test to compare the throughtput between  Batch on Publisher (send a list directly)  vs Batch on Subscriber
+Load test to compare the throughput between  Batch on Publisher (send a list directly)  vs Batch on Subscriber
