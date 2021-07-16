@@ -47,3 +47,5 @@ Unfortunately, I didn't figure out a way to make it work with batch
 
 ## Todo
 Load test to compare the throughput between  Batch on Publisher (send a list directly)  vs Batch on Subscriber
+
+### It's forbidden to use these codes for a commercial product
