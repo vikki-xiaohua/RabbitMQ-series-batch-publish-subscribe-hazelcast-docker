@@ -51,7 +51,7 @@ Load test to compare the throughput between  Batch on Publisher (send a list dir
 
 ### Also  see
 
-> https://github.com/vikki-xiaohua/rabbitmq-publish-subscribe
+> https://github.com/vikki-xiaohua/rabbitmq-publish-subscribe-hazelcast-docker
 
 
 ### It's forbidden to use these codes for a commercial product
